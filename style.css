@@ -1,0 +1,45 @@
+.ajingButton{
+    box-sizing: border-box;
+    display: inline-block;
+    background: none;
+    height: 40px;
+    line-height: 36px;
+    padding: 0 16px;
+    text-decoration:none;
+    font-size: 14px;
+    margin: 30% 30%;
+    border: none;
+    transition: all 0.5s;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+}
+.ajingButton:hover{
+    background: #E5E5E5;
+    cursor: pointer;    
+
+}
+.ajingButton:focus{
+    background: #E5E5E5;
+    outline: none;
+}
+.ajingButton > .circle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background: gray;
+    margin-left: -5px;
+    margin-top: -5px;
+    transition:transform 0.5s;
+    visibility: hidden;
+    pointer-events: none;
+    z-index: -1;
+
+}
+.ajingButton:focus .circle.active{
+    transform: scale(10);
+    visibility: visible;
+}
