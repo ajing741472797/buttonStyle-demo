@@ -1,3 +1,6 @@
+body{
+    background: #f6f5ec;
+}
 .ajingButton{
     box-sizing: border-box;
     display: inline-block;
@@ -6,13 +9,15 @@
     line-height: 36px;
     padding: 0 16px;
     text-decoration:none;
+    border: none;
     font-size: 14px;
     margin: 30% 30%;
-    border: none;
     transition: all 0.5s;
     position: relative;
     overflow: hidden;
     z-index: 0;
+    background: white;
+
 }
 .ajingButton:hover{
     background: #E5E5E5;
@@ -30,7 +35,7 @@
     border-radius: 50%;
     width: 10px;
     height: 10px;
-    background: gray;
+    background: grey;
     margin-left: -5px;
     margin-top: -5px;
     transition:transform 0.5s;
